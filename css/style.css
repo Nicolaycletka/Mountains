@@ -1,104 +1,93 @@
-.header-bacground {
+.header {
+  padding-top: 23px;
+  padding-bottom: 21px;
+  background-color: rgba(255, 255, 255, 0.23);
+}
+.header_bacground {
   background-image: url("../images/Hbackground.png");
   background-size: cover;
   height: 698px;
+  padding: 0;
 }
-
-.color-mountains {
+.header_logo {
+  font-size: 1.5em;
+  font-family: Bringin;
+}
+.header_logo_moun {
   color: #36aeea;
   padding: 0;
   margin: 0;
 }
-
-.color-tains {
+.header_logo_tains {
   color: #bac6cb;
   padding: 0;
   margin: 0;
 }
-
-.nav-text-size {
+.header_nav {
   font-size: 0.55em;
   padding-left: 0;
   padding-right: 0;
   font-family: Opensansbold;
 }
-
-.titlefont {
-  font-size: 1.5em;
-  font-family: Bringin;
+.header_nav_link {
+  border-bottom: transparent solid 2px;
+  padding: 0;
+  margin-right: 25px;
+  color: #bac6cb;
 }
-
-.header-bottom {
+.header_nav_link:hover {
+  color: #bac6cb;
+  border-bottom: solid #36aeea 2px;
+  border-radius: 0;
+}
+.header_bottom {
   color: #36aeea;
   border: solid #36aeea 2px;
   font-size: 0.7em;
   width: 154px;
   height: 45px;
 }
-.header-bottom:hover {
+.header_bottom:hover {
   background-color: #36aeea;
   color: white;
   border: solid #36aeea 2px;
 }
-
-.header-bottom-pading {
+.header_bottom_container {
   padding-right: 0;
 }
-
-.nav-bacground {
-  padding-top: 23px;
-  padding-bottom: 21px;
-}
-
-nav a {
-  color: #bac6cb;
-}
-
-.navbacgroundimg {
-  position: absolute;
-  left: auto;
-}
-
-.header-bordebr-bloc {
+.header_mainBloc {
   height: 325px;
   border: solid white 2px;
   margin-top: 150px;
   position: relative;
 }
-
-.fontitalic {
+.header_mainBloc_textPadding {
+  margin: 25px 0 0 10px;
+  padding: 0;
+}
+.header_mainBloc_ItalicHeading {
   font-family: Bringin;
   font-size: 3.9em;
   line-height: 0;
   color: #36aeea;
-  color-word-spacing: -6px;
+  word-spacing: -6px;
   letter-spacing: 4px;
 }
-
-.fontbold {
+.header_mainBloc_BoldHeading {
   font-family: Opensansbold;
   font-size: 3.3em;
   color: white;
   word-spacing: -6px;
   letter-spacing: 8px;
 }
-
-.heder-text-padding {
-  margin: 25px 0 0 10px;
-  padding: 0;
-}
-
-.headercolorgrey {
+.header_mainBloc_p {
   color: #bac6cb;
   font-size: 1.2em;
-  max-width: 450px;
   font-family: Opensans;
   padding-top: 20px;
   padding-bottom: 8px;
 }
-
-.bottomheader {
-  color: #36aeea;
+.header_mainBloc_bottom {
   border: solid #36aeea 2px;
   background-color: #36aeea;
   color: white;
@@ -109,10 +98,15 @@ nav a {
   font-weight: 300;
   letter-spacing: 2px;
 }
-.bottomheader:hover {
+.header_mainBloc_bottom:hover {
   background-color: #36aeea;
   color: white;
   border: solid #36aeea 2px;
+}
+
+.navbacgroundimg {
+  position: absolute;
+  left: auto;
 }
 
 .headhat {
@@ -120,17 +114,6 @@ nav a {
   left: 939px;
   top: 137px;
   z-index: 1;
-}
-
-.underline-link {
-  border-bottom: transparent solid 2px;
-  padding: 0;
-  margin-right: 25px;
-}
-.underline-link:hover {
-  color: #bac6cb;
-  border-bottom: solid #36aeea 2px;
-  border-radius: 0;
 }
 
 @font-face {

@@ -1,117 +1,108 @@
 $Headerblue: #36aeea
 $Headergrey: #bac6cb
 
-.header-bacground
+.header
+ padding-top: 23px
+ padding-bottom: 21px
+ background-color: rgba(255, 255, 255, 0.23)
+
+ &_bacground
   background-image: url("../images/Hbackground.png")
   background-size: cover
   height: 698px
+  padding: 0
+ &_logo
+  font-size: 1.5em
+  font-family: Bringin
 
-.color-mountains
-  color: $Headerblue
-  padding: 0
-  margin: 0
-.color-tains
-  color: $Headergrey
-  padding: 0
-  margin: 0
-.nav-text-size
+  &_moun
+   color: $Headerblue
+   padding: 0
+   margin: 0
+  &_tains
+   color: $Headergrey
+   padding: 0
+   margin: 0
+ &_nav
   font-size: 0.55em
   padding-left: 0
   padding-right: 0
-
   font-family: Opensansbold
-.titlefont
-  font-size: 1.5em
-  font-family: Bringin
-.header-bottom
+
+  &_link
+   border-bottom: transparent solid 2px
+   padding: 0
+   margin-right: 25px
+   color: $Headergrey
+
+   &:hover
+    color: $Headergrey
+    border-bottom: solid $Headerblue 2px
+    border-radius: 0
+ &_bottom
   color: $Headerblue
   border: solid $Headerblue 2px
   font-size: 0.7em
   width: 154px
   height: 45px
   &:hover
-    background-color: $Headerblue
-    color: white
-    border: solid $Headerblue 2px
-  //.btn-primary:focus
-  //.btn-primary:visited
-  // background-color: green
-  // color: white
-
-.header-bottom-pading
-  padding-right: 0
-
-.nav-bacground
- padding-top: 23px
- padding-bottom: 21px
-
-nav
-  a
-   color: $Headergrey
-.navbacgroundimg
-  position: absolute
-  left: auto
-.header-bordebr-bloc
+   background-color: $Headerblue
+   color: white
+   border: solid $Headerblue 2px
+  &_container
+   padding-right: 0
+ &_mainBloc
   height: 325px
   border: solid white 2px
   margin-top: 150px
   position: relative
-.fontitalic
-  font-family: Bringin
-  font-size: 3.9em
-  line-height: 0
-  color: $Headerblue
-    word-spacing: -6px
-  letter-spacing: 4px
-.fontbold
-  font-family: Opensansbold
-  font-size: 3.3em
-  color: white
-  word-spacing: -6px
-  letter-spacing: 8px
-
-.heder-text-padding
- //width: 500px
- margin: 25px 0 0 10px
- padding: 0
-.headercolorgrey
-  color: $Headergrey
-  font-size: 1.2em
-  max-width: 450px
-  font-family: Opensans
-  padding-top: 20px
-  padding-bottom: 8px
-
-.bottomheader
-  color: $Headerblue
-  border: solid $Headerblue 2px
-  background-color: $Headerblue
-  color: white
-  font-size: 0.9em
-  width: 256px
-  height: 62px
-  font-family: Raleway
-  font-weight: 300
-  letter-spacing: 2px
-  &:hover
+  &_textPadding
+   margin: 25px 0 0 10px
+   padding: 0
+  &_ItalicHeading
+   font-family: Bringin
+   font-size: 3.9em
+   line-height: 0
+   color: $Headerblue
+   word-spacing: -6px
+   letter-spacing: 4px
+  &_BoldHeading
+   font-family: Opensansbold
+   font-size: 3.3em
+   color: white
+   word-spacing: -6px
+   letter-spacing: 8px
+  &_p
+   color: $Headergrey
+   font-size: 1.2em
+   font-family: Opensans
+   padding-top: 20px
+   padding-bottom: 8px
+  &_bottom
+   border: solid $Headerblue 2px
+   background-color: $Headerblue
+   color: white
+   font-size: 0.9em
+   width: 256px
+   height: 62px
+   font-family: Raleway
+   font-weight: 300
+   letter-spacing: 2px
+   &:hover
     background-color: $Headerblue
     color: white
     border: solid $Headerblue 2px
+
+
+.navbacgroundimg
+  position: absolute
+  left: auto
+
 .headhat
   position: absolute
   left: 939px
   top: 137px
   z-index: 1
-
-.underline-link
-  border-bottom: transparent solid 2px
-  padding: 0
-  margin-right: 25px
-
-  &:hover
-    color: $Headergrey
-    border-bottom: solid $Headerblue 2px
-    border-radius: 0
 
 @font-face
   font-family: Bringin
