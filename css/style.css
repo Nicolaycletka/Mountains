@@ -1,25 +1,26 @@
-.headerbacground {
+.header-bacground {
   background-image: url("../images/Hbackground.png");
   background-size: cover;
   height: 698px;
 }
 
-.colorMountains {
+.color-mountains {
   color: #36aeea;
   padding: 0;
   margin: 0;
 }
 
-.colortains {
+.color-tains {
   color: #bac6cb;
   padding: 0;
   margin: 0;
 }
 
-.navtextsize {
+.nav-text-size {
   font-size: 0.55em;
   padding-left: 0;
   padding-right: 0;
+  font-family: Opensansbold;
 }
 
 .titlefont {
@@ -27,24 +28,24 @@
   font-family: Bringin;
 }
 
-.headerbottom {
+.header-bottom {
   color: #36aeea;
   border: solid #36aeea 2px;
   font-size: 0.7em;
   width: 154px;
   height: 45px;
 }
-.headerbottom:hover {
+.header-bottom:hover {
   background-color: #36aeea;
   color: white;
   border: solid #36aeea 2px;
 }
 
-.headerbottompading {
+.header-bottom-pading {
   padding-right: 0;
 }
 
-.navbacground {
+.nav-bacground {
   padding-top: 23px;
   padding-bottom: 21px;
 }
@@ -58,7 +59,7 @@ nav a {
   left: auto;
 }
 
-.headerbordebrloc {
+.header-bordebr-bloc {
   height: 325px;
   border: solid white 2px;
   margin-top: 150px;
@@ -70,22 +71,30 @@ nav a {
   font-size: 3.9em;
   line-height: 0;
   color: #36aeea;
+  color-word-spacing: -6px;
+  letter-spacing: 4px;
 }
 
 .fontbold {
   font-family: Opensansbold;
-  font-size: 3em;
+  font-size: 3.3em;
   color: white;
+  word-spacing: -6px;
+  letter-spacing: 8px;
 }
 
-.hedertextpadding {
-  width: 500px;
-  margin: 20px 0 0 0;
+.heder-text-padding {
+  margin: 25px 0 0 10px;
+  padding: 0;
 }
 
 .headercolorgrey {
   color: #bac6cb;
   font-size: 1.2em;
+  max-width: 450px;
+  font-family: Opensans;
+  padding-top: 20px;
+  padding-bottom: 8px;
 }
 
 .bottomheader {
@@ -106,6 +115,22 @@ nav a {
   border: solid #36aeea 2px;
 }
 
+.headhat {
+  position: absolute;
+  left: 939px;
+  top: 137px;
+  z-index: 1;
+}
+
+.underline-link {
+  border-bottom: transparent solid 2px;
+}
+.underline-link:hover {
+  color: #bac6cb;
+  border-bottom: solid #36aeea 2px;
+  border-radius: 0;
+}
+
 @font-face {
   font-family: Bringin;
   src: url(../font/Bringin.otf);
@@ -117,6 +142,10 @@ nav a {
 @font-face {
   font-family: Raleway;
   src: url(../font/Raleway.ttf);
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../font/OpenSans.ttf);
 }
 
 /*# sourceMappingURL=style.css.map */

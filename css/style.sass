@@ -1,32 +1,28 @@
 $Headerblue: #36aeea
+$Headergrey: #bac6cb
 
-.headerbacground
-  //background: url("../images/Hbackground.png") no-repeat center center fixed
-  //-webkit-background-size: cover
-  //-moz-background-size: cover
-  //-o-background-size: cover
-  //background-size: cover
-
+.header-bacground
   background-image: url("../images/Hbackground.png")
   background-size: cover
   height: 698px
 
-.colorMountains
+.color-mountains
   color: $Headerblue
   padding: 0
   margin: 0
-.colortains
-  color: #bac6cb
+.color-tains
+  color: $Headergrey
   padding: 0
   margin: 0
-.navtextsize
+.nav-text-size
   font-size: 0.55em
   padding-left: 0
   padding-right: 0
+  font-family: Opensansbold
 .titlefont
   font-size: 1.5em
   font-family: Bringin
-.headerbottom
+.header-bottom
   color: $Headerblue
   border: solid $Headerblue 2px
   font-size: 0.7em
@@ -41,20 +37,20 @@ $Headerblue: #36aeea
   // background-color: green
   // color: white
 
-.headerbottompading
+.header-bottom-pading
   padding-right: 0
 
-.navbacground
+.nav-bacground
  padding-top: 23px
  padding-bottom: 21px
 
 nav
   a
-   color: #bac6cb
+   color: $Headergrey
 .navbacgroundimg
   position: absolute
   left: auto
-.headerbordebrloc
+.header-bordebr-bloc
   height: 325px
   border: solid white 2px
   margin-top: 150px
@@ -64,18 +60,27 @@ nav
   font-size: 3.9em
   line-height: 0
   color: $Headerblue
+    word-spacing: -6px
+  letter-spacing: 4px
 .fontbold
   font-family: Opensansbold
-  font-size: 3em
+  font-size: 3.3em
   color: white
-  //letter-spacing: 14px
-  //word-spacing: 2px
-.hedertextpadding
- width: 500px
- margin: 20px 0 0 0
+  word-spacing: -6px
+  letter-spacing: 8px
+
+.heder-text-padding
+ //width: 500px
+ margin: 25px 0 0 10px
+ padding: 0
 .headercolorgrey
-  color: #bac6cb
+  color: $Headergrey
   font-size: 1.2em
+  max-width: 450px
+  font-family: Opensans
+  padding-top: 20px
+  padding-bottom: 8px
+
 .bottomheader
   color: $Headerblue
   border: solid $Headerblue 2px
@@ -91,10 +96,18 @@ nav
     background-color: $Headerblue
     color: white
     border: solid $Headerblue 2px
-//.headhat
-//  position: absolute
-//  left: 733px
-//  top: -80px
+.headhat
+  position: absolute
+  left: 939px
+  top: 137px
+  z-index: 1
+
+.underline-link
+  border-bottom: transparent solid 2px
+  &:hover
+    color: $Headergrey
+    border-bottom: solid $Headerblue 2px
+    border-radius: 0
 
 @font-face
   font-family: Bringin
@@ -105,3 +118,6 @@ nav
 @font-face
   font-family: Raleway
   src: url(../font/Raleway.ttf)
+@font-face
+  font-family: OpenSans
+  src: url(../font/OpenSans.ttf)
