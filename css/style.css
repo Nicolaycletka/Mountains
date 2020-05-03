@@ -124,6 +124,8 @@ nav a {
 
 .underline-link {
   border-bottom: transparent solid 2px;
+  padding: 0;
+  margin-right: 25px;
 }
 .underline-link:hover {
   color: #bac6cb;
