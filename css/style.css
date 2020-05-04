@@ -104,16 +104,75 @@
   border: solid #36aeea 2px;
 }
 
-.navbacgroundimg {
-  position: absolute;
-  left: auto;
-}
-
 .headhat {
   position: absolute;
   left: 939px;
   top: 137px;
   z-index: 1;
+}
+
+.aboutUs {
+  height: 667px;
+  background-color: #f6f4f4;
+  position: relative;
+}
+.aboutUs_images {
+  height: 667px;
+  padding: 0;
+  z-index: 0;
+}
+.aboutUs_images_waves {
+  padding-right: 0;
+}
+.aboutUs_images_earth {
+  z-index: 0;
+  position: absolute;
+  top: 24px;
+  left: 488px;
+}
+.aboutUs_images_main {
+  padding-bottom: 39px;
+}
+.aboutUs_images_img {
+  position: absolute;
+  z-index: 0;
+  top: -37px;
+  left: 937px;
+}
+.aboutUs_textblock {
+  height: 667px;
+}
+.aboutUs_textblock_margin {
+  margin-top: -37px;
+}
+.aboutUs_textblock h1 {
+  font-family: OpenSansbold;
+  font-size: 20px;
+  padding-top: 31.5px;
+}
+.aboutUs_textblock p {
+  color: #9b9a9a;
+  font-family: OpenSans;
+  font-size: 14px;
+  padding-top: 10px;
+  line-height: 26px;
+  padding-bottom: 8.5px;
+}
+.aboutUs_textblock button {
+  border: solid #36aeea 2px;
+  background-color: #36aeea;
+  color: white;
+  font-size: 12px;
+  width: 130px;
+  height: 40px;
+  font-family: OpenSans;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.aboutUs_textblock button:hover {
+  background-color: #36aeea;
+  color: white;
+  border: solid #36aeea 2px;
 }
 
 @font-face {

@@ -1,5 +1,7 @@
 $Headerblue: #36aeea
 $Headergrey: #bac6cb
+$aboutUs_bg_color: #f6f4f4
+$aboutUs_grey: #9b9a9a
 
 .header
  padding-top: 23px
@@ -94,15 +96,76 @@ $Headergrey: #bac6cb
     border: solid $Headerblue 2px
 
 
-.navbacgroundimg
-  position: absolute
-  left: auto
+
+
+
 
 .headhat
   position: absolute
   left: 939px
   top: 137px
   z-index: 1
+
+.aboutUs
+ height: 667px
+ background-color: $aboutUs_bg_color
+ position: relative
+ &_images
+  height: 667px
+  padding: 0
+  z-index: 0
+  &_waves
+   padding-right: 0
+  &_earth
+   z-index: 0
+   position: absolute
+   top: 24px
+   left: 488px
+  &_main
+   padding-bottom: 39px
+  &_img
+   position: absolute
+   z-index: 0
+   top: -37px
+   left: 937px
+ &_textblock
+  height: 667px
+  &_margin
+   margin-top: -37px
+  h1
+   font-family: OpenSansbold
+
+   font-size: 20px
+   padding-top: 31.5px
+  p
+   color: $aboutUs_grey
+   font-family: OpenSans
+   font-size: 14px
+   padding-top: 10px
+   line-height: 26px
+   padding-bottom: 8.5px
+  button
+   border: solid $Headerblue 2px
+   background-color: $Headerblue
+   color: white
+   font-size: 12px
+   width: 130px
+   height: 40px
+   font-family: OpenSans
+   font-weight: bold
+   letter-spacing: 2px
+   &:hover
+    background-color: $Headerblue
+    color: white
+    border: solid $Headerblue 2px
+
+
+
+
+
+
+
+
 
 @font-face
   font-family: Bringin

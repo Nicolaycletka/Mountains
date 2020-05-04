@@ -18,18 +18,16 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <header class="container-fluid justify-content-center header_bacground">
+      <img
+        class="headhat"
+        src="images/hat.png"
+        class="img-fluid"
+        alt="Responsive image"
+      />
 
-      <header class="container-fluid justify-content-center header_bacground">
-
-        <img
-          class="headhat"
-          src="images/hat.png"
-          class="img-fluid"
-          alt="Responsive image"
-        />
-
-          <div class="container-fluid header">
-            <div class="container">
+      <div class="container-fluid header">
+        <div class="container">
           <div class="row justify-content-center">
             <div class="col-2 header_logo">
               <span class="header_logo_moun">Moun</span
@@ -80,30 +78,74 @@
               </button>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container col-12 border-white header_mainBloc">
+          <div class="container header_mainBloc_textPadding">
+            <span class="header_mainBloc_BoldHeading">
+              TRAVEL WITH US
+            </span>
+            <br />
+            <span class="header_mainBloc_ItalicHeading">
+              to the Mountins
+            </span>
+            <p class="header_mainBloc_p col-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Architecto aspernatur
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary header_mainBloc_bottom"
+            >
+              ORDER NOW
+            </button>
           </div>
-          </div>
-        <div class="container">
-            <div class="container col-12 border-white header_mainBloc">
-              <div class="container header_mainBloc_textPadding">
-                <span class="header_mainBloc_BoldHeading">
-                  TRAVEL WITH US
-                </span>
-                <br />
-                <span class="header_mainBloc_ItalicHeading">
-                  to the Mountins
-                </span>
-                <p class="header_mainBloc_p col-5">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Architecto aspernatur
-                </p>
-                <button type="button" class="btn btn-primary header_mainBloc_bottom">
-                  ORDER NOW
-                </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="aboutUs container-fluid">
+      <div class="container">
+        <img
+          class="aboutUs_images_earth"
+          src="images/Earth.png"
+          height="528"
+          width="1154"
+        />
+        <img
+          class="aboutUs_images_img"
+          src="images/aboutusimg.png"
+          height="570"
+          width="806"
+        />
+
+        <div class="row align-items-center aboutUs_images">
+          <div class="container">
+            <div class="row align-items-center aboutUs_textblock_margin">
+              <div class="row aboutUs_textblock">
+                <div class="col-4 align-self-center">
+                  <img src="images/waves.png" alt="waves" />
+                  <h1>ABOUT US</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Cupiditate doloremque magni minus, nam obcaecati quae
+                    quibusdam
+                  </p>
+                  <button type="button" class="btn btn-primary">
+                    READ MORE
+                  </button>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5 align-self-end aboutUs_images_main">
+                  <img class="align-self-end" src="images/AboutUsmainimg.png" />
+                </div>
               </div>
             </div>
-
+          </div>
         </div>
-      </header>
+      </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
