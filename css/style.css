@@ -132,6 +132,10 @@
 }
 .aboutUs_images_main {
   padding-bottom: 39px;
+  padding-left: 0;
+}
+.aboutUs_images_empty {
+  padding-right: 0;
 }
 .aboutUs_images_img {
   position: absolute;
@@ -144,6 +148,7 @@
 }
 .aboutUs_textblock_margin {
   margin-top: -37px;
+  padding-left: 15px;
 }
 .aboutUs_textblock h1 {
   font-family: OpenSansbold;
