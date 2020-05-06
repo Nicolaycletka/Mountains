@@ -3,6 +3,7 @@ $Headergrey: #bac6cb
 $aboutUs_bg_color: #f6f4f4
 $aboutUs_grey: #9b9a9a
 $journalHblue: #16b5ef
+$inputGrey: #848484
 
 .header
  padding-top: 23px
@@ -259,6 +260,86 @@ $journalHblue: #16b5ef
     z-index: 122
  S
   font-weight: bolder
+
+.form
+ background-image: url("../images/filds/filds_bg.png")
+ height: 650px
+ position: relative
+ width: 100%
+ padding: 0
+ z-index: 0
+
+ &_tree
+  position: absolute
+  bottom: 0
+  left: 1236px
+  z-index: 1
+  &_blure
+   position: absolute
+   bottom: 0
+   left: 1380px
+   z-index: 2
+ &_heading
+  margin-bottom: 40px
+  margin-top: 145px
+  &_font
+   font-family: Opensansbold
+   text-transform: uppercase
+   font-size: 20px
+   margin-bottom: 24px
+ p
+  font-family: OpenSans
+  font-size: 16px
+  color: $aboutUs_grey
+  line-height: 9px
+ form
+  padding: 0
+ &_imput_container
+  padding-left: -1px !important
+  padding-right: 0 !important
+  background-color: white
+  height: 62px
+  .phone
+   border-left: 1px solid #ebebeb
+   padding-left: 21px
+ &_text
+  margin-bottom: 33px
+
+
+ &_imput
+  border-radius: 0
+  border: none
+  padding-top: 0
+  padding-bottom: 0
+  height: 34px
+  color: $aboutUs_grey
+  &::-webkit-input-placeholder
+   color: $inputGrey
+  &:focus
+   box-shadow: none
+   outline: none
+   &::-webkit-input-placeholder
+    color: transparent
+  &_button
+   height: 54px
+   width: 224px
+
+   background-color:  $Headerblue
+   border-color: $Headerblue
+   &:hover
+    background-color: $Headerblue
+    border-color: $Headerblue
+ &_lock
+  padding: 0
+  margin-top: 18px
+  &_text
+   font-family: OpenSans !important
+   font-size: 14px !important
+   color: $Headerblue !important
+   //height: 16px
+   margin: 0 !important
+   vertical-align: center !important
+   margin-left: 10px !important
 
 
 @font-face

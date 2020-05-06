@@ -289,6 +289,99 @@
   font-weight: bolder;
 }
 
+.form {
+  background-image: url("../images/filds/filds_bg.png");
+  height: 650px;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  z-index: 0;
+}
+.form_tree {
+  position: absolute;
+  bottom: 0;
+  left: 1236px;
+  z-index: 1;
+}
+.form_tree_blure {
+  position: absolute;
+  bottom: 0;
+  left: 1380px;
+  z-index: 2;
+}
+.form_heading {
+  margin-bottom: 40px;
+  margin-top: 145px;
+}
+.form_heading_font {
+  font-family: Opensansbold;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.form p {
+  font-family: OpenSans;
+  font-size: 16px;
+  color: #9b9a9a;
+  line-height: 9px;
+}
+.form form {
+  padding: 0;
+}
+.form_imput_container {
+  padding-left: -1px !important;
+  padding-right: 0 !important;
+  background-color: white;
+  height: 62px;
+}
+.form_imput_container .phone {
+  border-left: 1px solid #ebebeb;
+  padding-left: 21px;
+}
+.form_text {
+  margin-bottom: 33px;
+}
+.form_imput {
+  border-radius: 0;
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 34px;
+  color: #9b9a9a;
+}
+.form_imput::-webkit-input-placeholder {
+  color: #848484;
+}
+.form_imput:focus {
+  box-shadow: none;
+  outline: none;
+}
+.form_imput:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.form_imput_button {
+  height: 54px;
+  width: 224px;
+  background-color: #36aeea;
+  border-color: #36aeea;
+}
+.form_imput_button:hover {
+  background-color: #36aeea;
+  border-color: #36aeea;
+}
+.form_lock {
+  padding: 0;
+  margin-top: 18px;
+}
+.form_lock_text {
+  font-family: OpenSans !important;
+  font-size: 14px !important;
+  color: #36aeea !important;
+  margin: 0 !important;
+  vertical-align: center !important;
+  margin-left: 10px !important;
+}
+
 @font-face {
   font-family: Bringin;
   src: url(../font/Bringin.otf);
