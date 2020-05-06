@@ -180,6 +180,115 @@
   border: solid #36aeea 2px;
 }
 
+.journal {
+  height: 978px;
+  background-color: white;
+}
+.journal_shadow {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.journal_shadow .row {
+  height: 380px;
+}
+.journal_1_mainText {
+  margin-bottom: 42px;
+  margin-left: 41px;
+  margin-right: 39px;
+}
+.journal_heading {
+  font-family: Opensansbold;
+  font-size: 30px;
+  padding-top: 26px;
+  margin-bottom: 70px;
+}
+.journal_heading_container {
+  padding-top: 64px;
+}
+.journal_1_img {
+  background-image: url("../images/Journal/journal1.png");
+  height: 380px;
+}
+.journal_1_img_1 {
+  width: 100%;
+}
+.journal_2_img {
+  background-image: url("../images/Journal/journal2.png");
+  height: 380px;
+}
+.journal_3_img {
+  background-image: url("../images/Journal/journal3.png");
+  height: 380px;
+}
+.journal_text {
+  height: 380px;
+  margin-top: 47px;
+}
+.journal_text h1 {
+  font-family: Opensansbold;
+  font-size: 11px;
+  color: #16b5ef;
+  letter-spacing: 2px;
+  margin-bottom: 55px;
+}
+.journal_text h2 {
+  font-family: Opensansbold;
+  font-size: 16.15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: -3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 23.5px;
+  margin-bottom: 29px;
+}
+.journal_text p {
+  font-family: OpenSans;
+  font-size: 14px;
+  color: #9b9a9a;
+  word-spacing: -1px;
+}
+.journal_text_list {
+  font-family: "Times New Roman" !important;
+  font-size: 14px !important;
+  color: #000 !important;
+  font-style: italic !important;
+}
+.journal_text_arrow_1:before {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  right: 100%;
+  top: 55px;
+  border-right-color: #fff;
+  border-width: 9px;
+  margin-top: -9px;
+}
+.journal_text_arrow_2:before {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  left: 100%;
+  top: 55px;
+  border-left-color: #fff;
+  border-width: 9px;
+  margin-top: -9px;
+  z-index: 1;
+}
+.journal_text_arrow_3:before {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  bottom: 112.5%;
+  right: 55px;
+  border-bottom-color: #fff;
+  border-width: 9px;
+  margin-top: -9px;
+  z-index: 122;
+}
+.journal S {
+  font-weight: bolder;
+}
+
 @font-face {
   font-family: Bringin;
   src: url(../font/Bringin.otf);
