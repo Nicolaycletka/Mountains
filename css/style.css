@@ -127,21 +127,22 @@
 .aboutUs_images_earth {
   z-index: 0;
   position: absolute;
-  top: 24px;
-  left: 488px;
+}
+.aboutUs_images_earth_container {
+  position: relative;
 }
 .aboutUs_images_main {
   padding-bottom: 39px;
   padding-left: 0;
+  z-index: 2;
 }
 .aboutUs_images_empty {
   padding-right: 0;
 }
 .aboutUs_images_img {
   position: absolute;
-  z-index: 0;
-  top: -37px;
-  left: 937px;
+  z-index: 1;
+  top: -57px;
 }
 .aboutUs_textblock {
   height: 667px;
@@ -312,6 +313,7 @@
 .form_heading {
   margin-bottom: 40px;
   margin-top: 145px;
+  width: 80px;
 }
 .form_heading_font {
   font-family: Opensansbold;
@@ -380,6 +382,24 @@
   margin: 0 !important;
   vertical-align: center !important;
   margin-left: 10px !important;
+}
+
+.zigzag_heading {
+  background-image: linear-gradient(to bottom right, transparent 50.5%, white 50.5%), linear-gradient(to bottom left, transparent 50.5%, white 50.5%), linear-gradient(to bottom right, transparent 50.5%, #d2d2d2 50.5%), linear-gradient(to bottom left, transparent 50.5%, #d2d2d2 50.5%);
+  background-repeat: repeat-x, repeat-x;
+  background-position: 5px 2px, 5px 2px, 5px 0, 5px 0;
+  background-size: 10px 10px, 10px 10px;
+  height: 20px;
+  width: 80px;
+}
+
+.zigzag_heading_grey {
+  background-image: linear-gradient(to bottom right, transparent 50.5%, #f6f4f4 50.5%), linear-gradient(to bottom left, transparent 50.5%, #f6f4f4 50.5%), linear-gradient(to bottom right, transparent 50.5%, #d2d2d2 50.5%), linear-gradient(to bottom left, transparent 50.5%, #d2d2d2 50.5%);
+  background-repeat: repeat-x, repeat-x;
+  background-position: 5px 2px, 5px 2px, 5px 0, 5px 0;
+  background-size: 10px 10px, 10px 10px;
+  height: 20px;
+  width: 80px;
 }
 
 @font-face {

@@ -4,6 +4,7 @@ $aboutUs_bg_color: #f6f4f4
 $aboutUs_grey: #9b9a9a
 $journalHblue: #16b5ef
 $inputGrey: #848484
+$zigzaggrey: #d2d2d2
 
 .header
  padding-top: 23px
@@ -121,18 +122,22 @@ $inputGrey: #848484
   &_earth
    z-index: 0
    position: absolute
-   top: 24px
-   left: 488px
+   //top: 24px
+   //left: 488px
+   &_container
+    position: relative
+
   &_main
    padding-bottom: 39px
    padding-left: 0
+   z-index: 2
   &_empty
    padding-right: 0
   &_img
    position: absolute
-   z-index: 0
-   top: -37px
-   left: 937px
+   z-index: 1
+   top: -57px
+   //left: 937px
  &_textblock
   height: 667px
   &_margin
@@ -282,6 +287,8 @@ $inputGrey: #848484
  &_heading
   margin-bottom: 40px
   margin-top: 145px
+  width: 80px
+
   &_font
    font-family: Opensansbold
    text-transform: uppercase
@@ -341,7 +348,25 @@ $inputGrey: #848484
    vertical-align: center !important
    margin-left: 10px !important
 
+.scheme
+ &_heading
 
+
+.zigzag_heading
+ background-image: linear-gradient(to bottom right, transparent 50.5%, white 50.5%), linear-gradient(to bottom left, transparent 50.5%, white 50.5%), linear-gradient(to bottom right, transparent 50.5%, $zigzaggrey 50.5%), linear-gradient(to bottom left, transparent 50.5%, $zigzaggrey 50.5%)
+ background-repeat: repeat-x, repeat-x
+ background-position: 5px 2px, 5px 2px, 5px 0, 5px 0  /*  двигаем градиент-блоки */
+ background-size: 10px 10px, 10px 10px  /* регулируем высоту */
+ height: 20px
+ width: 80px
+
+.zigzag_heading_grey
+ background-image: linear-gradient(to bottom right, transparent 50.5%, $aboutUs_bg_color 50.5%), linear-gradient(to bottom left, transparent 50.5%, $aboutUs_bg_color 50.5%), linear-gradient(to bottom right, transparent 50.5%, $zigzaggrey 50.5%), linear-gradient(to bottom left, transparent 50.5%, $zigzaggrey 50.5%)
+ background-repeat: repeat-x, repeat-x
+ background-position: 5px 2px, 5px 2px, 5px 0, 5px 0  /*  двигаем градиент-блоки */
+ background-size: 10px 10px, 10px 10px  /* регулируем высоту */
+ height: 20px
+ width: 80px
 @font-face
   font-family: Bringin
   src: url(../font/Bringin.otf)
