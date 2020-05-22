@@ -1,0 +1,95 @@
+.journal
+  height: 978px
+  background-color: white
+
+  &_shadow
+    box-shadow: 0 0 30px rgba(0,0,0,0.1)
+    .row
+      height: 380px
+  &_1_mainText
+    margin-bottom: 42px
+    margin-left: 41px
+    margin-right: 39px
+  &_heading
+    font-family: Opensansbold
+    font-size: 30px
+    padding-top: 26px
+    margin-bottom: 70px
+    &_container
+      padding-top: 64px
+  &_1_img
+    background-image: url("../images/Journal/journal1.png")
+    height: 380px
+    &_1
+      width: 100%
+  &_2_img
+    background-image: url("../images/Journal/journal2.png")
+    height: 380px
+  &_3_img
+    background-image: url("../images/Journal/journal3.png")
+    height: 380px
+
+  &_text
+    height: 380px
+    margin-top: 47px
+    h1
+      font-family: Opensansbold
+      font-size: 11px
+      color: $journalHblue
+      letter-spacing: 2px
+      margin-bottom: 55px
+    //margin-top:
+    h2
+      font-family: Opensansbold
+      font-size: 16.15px
+      text-transform: uppercase
+      letter-spacing: 3px
+      word-spacing: -3px
+      padding-left: 5px
+      padding-right: 5px
+      line-height: 23.5px
+      margin-bottom: 29px
+    p
+      font-family: OpenSans
+      font-size: 14px
+      color: $aboutUs_grey
+      word-spacing: -1px
+    &_list
+      font-family: "Times New Roman" !important
+      font-size: 14px !important
+      color: #000 !important
+      font-style: italic !important
+    &_arrow_1
+      &:before
+        content: ""
+        border: solid transparent
+        position: absolute
+        right: 100%
+        top: 55px
+        border-right-color: #fff
+        border-width: 9px
+        margin-top: -9px
+    &_arrow_2
+      &:before
+        content: ""
+        border: solid transparent
+        position: absolute
+        left: 100%
+        top: 55px
+        border-left-color: #fff
+        border-width: 9px
+        margin-top: -9px
+        z-index: 1
+    &_arrow_3
+      &:before
+        content: ""
+        border: solid transparent
+        position: absolute
+        bottom: 112.5%
+        right: 55px
+        border-bottom-color: #fff
+        border-width: 9px
+        margin-top: -9px
+        z-index: 122
+  S
+    font-weight: bolder
