@@ -631,6 +631,22 @@
   width: 107px !important;
 }
 
+.gallery_imageBottom {
+  margin-top: 20px;
+}
+
+.logos {
+  background-color: #f8f9fa;
+  height: 178px;
+  width: 100%;
+  margin-top: 83px;
+}
+.logos_container {
+  background-color: #f8f9fa;
+  height: 178px;
+  width: 100%;
+}
+
 @font-face {
   font-family: Bringin;
   src: url(../font/Bringin.otf);
