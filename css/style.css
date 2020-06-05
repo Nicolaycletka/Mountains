@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .zigzag_heading {
   background-image: linear-gradient(to bottom right, transparent 50.5%, white 50.5%), linear-gradient(to bottom left, transparent 50.5%, white 50.5%), linear-gradient(to bottom right, transparent 50.5%, #d2d2d2 50.5%), linear-gradient(to bottom left, transparent 50.5%, #d2d2d2 50.5%);
   background-repeat: repeat-x, repeat-x;
@@ -650,6 +651,112 @@
   width: 100%;
 }
 
+.footer {
+  background-image: url("../images/footer/bacground.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.footer_container_bq:before {
+  content: "“";
+  font-family: LeagueGothicRegular;
+  position: absolute;
+  left: 15px;
+  top: 63px;
+  color: #bcbcbc;
+  font-size: 92px;
+}
+.footer_container_bq_p {
+  font-family: OpenSans;
+  color: #bcbcbc;
+  font-size: 18px;
+  margin-top: 130px;
+}
+.footer_container_bq_bottom {
+  font-size: 16px;
+  font-family: OpenSans;
+  color: #36aeea;
+  font-weight: bold;
+  font-style: normal !important;
+  margin-left: 19px;
+}
+.footer_container_bq_job {
+  font-weight: normal;
+  font-style: normal !important;
+}
+.footer_container_bq_image {
+  margin-top: 30px;
+}
+.footer_login_container {
+  height: 496px;
+  width: 515px;
+  border-radius: 10px;
+  backdrop-filter: blur(40px);
+  margin-top: 140px;
+}
+.footer_login_container_heading {
+  text-align: center;
+  color: #36aeea;
+  text-transform: uppercase;
+  font-family: OpenSansbold;
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
+.footer_login_container_p {
+  font-size: 16px;
+  font-family: OpenSans;
+  color: #4e596b;
+  text-align: center;
+  margin-bottom: 38px;
+}
+.footer_login_container_form {
+  height: 60px;
+  width: 454px;
+  font-size: 18px;
+  font-family: Roboto-Regular;
+  color: #cfcfcf;
+  border: none;
+  margin-bottom: 19px;
+}
+.footer_login_container_form:focus {
+  box-shadow: none;
+  outline: none;
+}
+.footer_login_container_form::-webkit-input-placeholder {
+  color: #cfcfcf;
+  font-family: Roboto-Regular;
+  font-size: 18px;
+}
+.footer_login_container_button {
+  height: 69px;
+  width: 454px;
+  font-family: OpenSansbold;
+  color: white !important;
+  background-color: #36aeea !important;
+  border-color: #36aeea !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.footer_footer {
+  height: 86px;
+  background-color: #3c545b;
+  margin-top: 167px;
+}
+.footer_footer_rights {
+  color: #6c97a6;
+  font-family: OpenSans;
+  font-size: 18px;
+}
+.footer_footer_mobile {
+  font-family: RobotoBlack;
+  font-size: 27px;
+  color: #7ec8da;
+}
+.footer_footer_logo {
+  width: 139px;
+}
+
 @font-face {
   font-family: Bringin;
   src: url(../font/Bringin.otf);
@@ -669,6 +776,18 @@
 @font-face {
   font-family: RobotoBlack;
   src: url("../font/RobotoBlack.ttf");
+}
+@font-face {
+  font-family: LeagueGothic;
+  src: url("../font/LeagueGothic.ttf");
+}
+@font-face {
+  font-family: LeagueGothicRegular;
+  src: url(../font/LeagueGothicRegular.otf);
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../font/Roboto-Regular.ttf);
 }
 
 /*# sourceMappingURL=style.css.map */
