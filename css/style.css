@@ -65,6 +65,8 @@
   font-size: 0.7em;
   width: 154px;
   height: 45px;
+  z-index: 1;
+  position: relative;
 }
 .header_bottom:hover {
   background-color: #36aeea;
@@ -88,6 +90,7 @@
   height: 100%;
   width: 100%;
   border-bottom: solid 2px #fff;
+  z-index: 0;
 }
 .header_mainBloc_man {
   position: absolute;
@@ -131,6 +134,8 @@
   font-family: Raleway;
   font-weight: 300;
   letter-spacing: 2px;
+  z-index: 1;
+  position: relative;
 }
 .header_mainBloc_bottom:hover {
   background-color: #36aeea;
