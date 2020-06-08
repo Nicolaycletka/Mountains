@@ -37,10 +37,20 @@
   padding: 0;
   margin: 0;
 }
+@media screen and (max-width: 600px) {
+  .header_logo_moun {
+    font-size: 70px;
+  }
+}
 .header_logo_tains {
   color: #bac6cb;
   padding: 0;
   margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .header_logo_tains {
+    font-size: 70px;
+  }
 }
 .header_nav {
   font-size: 0.55em;
@@ -53,6 +63,12 @@
   padding: 0;
   margin-right: 25px;
   color: #bac6cb;
+}
+@media screen and (max-width: 600px) {
+  .header_nav_link {
+    font-size: 40px;
+    text-shadow: #36aeea 0 0 6px;
+  }
 }
 .header_nav_link:hover {
   color: #bac6cb;
@@ -67,6 +83,13 @@
   height: 45px;
   z-index: 1;
   position: relative;
+}
+@media screen and (max-width: 600px) {
+  .header_bottom {
+    width: 80%;
+    font-size: 20px;
+    margin-top: 20px;
+  }
 }
 .header_bottom:hover {
   background-color: #36aeea;
@@ -110,12 +133,22 @@
   word-spacing: -6px;
   letter-spacing: 4px;
 }
+@media screen and (max-width: 600px) {
+  .header_mainBloc_ItalicHeading {
+    font-size: 20px;
+  }
+}
 .header_mainBloc_BoldHeading {
   font-family: Opensansbold;
   font-size: 3.3em;
   color: white;
   word-spacing: -6px;
   letter-spacing: 8px;
+}
+@media screen and (max-width: 600px) {
+  .header_mainBloc_BoldHeading {
+    font-size: 18px;
+  }
 }
 .header_mainBloc_p {
   color: #bac6cb;

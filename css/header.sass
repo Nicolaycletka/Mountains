@@ -16,10 +16,14 @@
       color: $Headerblue
       padding: 0
       margin: 0
+      @media screen and (max-width: $pointTomobile)
+        font-size: 70px
     &_tains
       color: $Headergrey
       padding: 0
       margin: 0
+      @media screen and (max-width: $pointTomobile)
+        font-size: 70px
   &_nav
     font-size: 0.55em
     padding-left: 0
@@ -31,6 +35,9 @@
       padding: 0
       margin-right: 25px
       color: $Headergrey
+      @media screen and (max-width: $pointTomobile)
+        font-size: 40px
+        text-shadow: $Headerblue 0 0 6px
 
       &:hover
         color: $Headergrey
@@ -44,6 +51,10 @@
     height: 45px
     z-index: 1
     position: relative
+    @media screen and (max-width: $pointTomobile)
+      width: 80%
+      font-size: 20px
+      margin-top: 20px
     &:hover
       background-color: $Headerblue
       color: white
@@ -80,12 +91,16 @@
       color: $Headerblue
       word-spacing: -6px
       letter-spacing: 4px
+      @media screen and (max-width: $pointTomobile)
+        font-size: 20px
     &_BoldHeading
       font-family: Opensansbold
       font-size: 3.3em
       color: white
       word-spacing: -6px
       letter-spacing: 8px
+      @media screen and (max-width: $pointTomobile)
+        font-size: 18px
     &_p
       color: $Headergrey
       font-size: 1.2em
