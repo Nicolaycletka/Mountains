@@ -37,7 +37,7 @@
   padding: 0;
   margin: 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .header_logo_moun {
     font-size: 70px;
   }
@@ -47,7 +47,7 @@
   padding: 0;
   margin: 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .header_logo_tains {
     font-size: 70px;
   }
@@ -64,10 +64,10 @@
   margin-right: 25px;
   color: #bac6cb;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .header_nav_link {
     font-size: 40px;
-    text-shadow: #36aeea 0 0 6px;
+    text-shadow: #36aeea 1px 1px 1px;
   }
 }
 .header_nav_link:hover {
@@ -84,7 +84,7 @@
   z-index: 1;
   position: relative;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .header_bottom {
     width: 80%;
     font-size: 20px;
@@ -133,7 +133,7 @@
   word-spacing: -6px;
   letter-spacing: 4px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .header_mainBloc_ItalicHeading {
     font-size: 20px;
   }
@@ -145,7 +145,7 @@
   word-spacing: -6px;
   letter-spacing: 8px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .header_mainBloc_BoldHeading {
     font-size: 18px;
   }

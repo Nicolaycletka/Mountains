@@ -1,7 +1,11 @@
+
+
 .header
   padding-top: 23px
   padding-bottom: 21px
   background-color: rgba(255, 255, 255, 0.23)
+  @media screen and (max-width: $pointTomobile)
+
 
   &_bacground
     background-image: url("../images/Hbackground.png")
@@ -24,11 +28,14 @@
       margin: 0
       @media screen and (max-width: $pointTomobile)
         font-size: 70px
+
   &_nav
     font-size: 0.55em
     padding-left: 0
     padding-right: 0
     font-family: Opensansbold
+    //@media screen and (hover: none)
+    //  visibility: hidden
 
     &_link
       border-bottom: transparent solid 2px
@@ -37,8 +44,8 @@
       color: $Headergrey
       @media screen and (max-width: $pointTomobile)
         font-size: 40px
-        text-shadow: $Headerblue 0 0 6px
-
+        //text-shadow: $Headerblue 1px 1px 0, $Headerblue -1px -1px 0, $Headerblue -1px 1px 0, $Headerblue 1px -1px 0
+        text-shadow: $Headerblue 1px 1px 1px
       &:hover
         color: $Headergrey
         border-bottom: solid $Headerblue 2px
@@ -51,16 +58,21 @@
     height: 45px
     z-index: 1
     position: relative
+    //@media screen and (hover: none)
+    //  visibility: hidden
     @media screen and (max-width: $pointTomobile)
       width: 80%
       font-size: 20px
       margin-top: 20px
+
     &:hover
       background-color: $Headerblue
       color: white
       border: solid $Headerblue 2px
+
     &_container
       padding-right: 0
+
   &_mainBloc
     border: solid white 2px
     height: 325px
@@ -123,3 +135,8 @@
         background-color: $Headerblue
         color: white
         border: solid $Headerblue 2px
+
+
+
+
+
