@@ -29,7 +29,7 @@
   padding: 0;
 }
 .header_logo {
-  font-size: 1.5em;
+  font-size: 29px;
   font-family: Bringin;
 }
 .header_logo_moun {
@@ -42,6 +42,11 @@
     font-size: 70px;
   }
 }
+@media screen and (max-width: 450px) {
+  .header_logo_moun {
+    font-size: 30px;
+  }
+}
 .header_logo_tains {
   color: #bac6cb;
   padding: 0;
@@ -52,8 +57,13 @@
     font-size: 70px;
   }
 }
+@media screen and (max-width: 450px) {
+  .header_logo_tains {
+    font-size: 30px;
+  }
+}
 .header_nav {
-  font-size: 0.55em;
+  font-size: 12px;
   padding-left: 0;
   padding-right: 0;
   font-family: Opensansbold;
@@ -63,6 +73,7 @@
   padding: 0;
   margin-right: 25px;
   color: #bac6cb;
+  white-space: nowrap;
 }
 @media screen and (max-width: 767px) {
   .header_nav_link {

@@ -1,5 +1,7 @@
 
-
+//.navbar
+//  @media screen and (max-width: $pointTomobile)
+//  width: 100%
 .header
   padding-top: 23px
   padding-bottom: 21px
@@ -13,7 +15,7 @@
     height: 698px
     padding: 0
   &_logo
-    font-size: 1.5em
+    font-size: 29px
     font-family: Bringin
 
     &_moun
@@ -22,26 +24,31 @@
       margin: 0
       @media screen and (max-width: $pointTomobile)
         font-size: 70px
+      @media screen and (max-width: 450px)
+        font-size: 30px
     &_tains
       color: $Headergrey
       padding: 0
       margin: 0
       @media screen and (max-width: $pointTomobile)
         font-size: 70px
+      @media screen and (max-width: 450px)
+        font-size: 30px
 
   &_nav
-    font-size: 0.55em
+    font-size: 12px
     padding-left: 0
     padding-right: 0
     font-family: Opensansbold
-    //@media screen and (hover: none)
-    //  visibility: hidden
+
 
     &_link
       border-bottom: transparent solid 2px
       padding: 0
       margin-right: 25px
       color: $Headergrey
+      white-space: nowrap
+
       @media screen and (max-width: $pointTomobile)
         font-size: 40px
         //text-shadow: $Headerblue 1px 1px 0, $Headerblue -1px -1px 0, $Headerblue -1px 1px 0, $Headerblue 1px -1px 0
@@ -58,8 +65,7 @@
     height: 45px
     z-index: 1
     position: relative
-    //@media screen and (hover: none)
-    //  visibility: hidden
+
     @media screen and (max-width: $pointTomobile)
       width: 80%
       font-size: 20px
