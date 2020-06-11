@@ -22,11 +22,23 @@
   padding-bottom: 21px;
   background-color: rgba(255, 255, 255, 0.23);
 }
+@media screen and (max-width: 767px) {
+  .header {
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(40px);
+  }
+}
 .header_bacground {
   background-image: url("../images/Hbackground.png");
   background-size: cover;
   height: 698px;
   padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .header_bacground {
+    background-position: top;
+  }
 }
 .header_logo {
   font-size: 29px;
@@ -115,6 +127,17 @@
   height: 325px;
   margin-top: 150px;
 }
+@media screen and (max-width: 767px) {
+  .header_mainBloc {
+    border-radius: 8px;
+    margin-top: 250px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header_mainBloc {
+    margin-top: 200px;
+  }
+}
 .header_mainBloc:after {
   display: block;
   content: "";
@@ -126,15 +149,20 @@
   border-bottom: solid 2px #fff;
   z-index: 0;
 }
+@media screen and (max-width: 767px) {
+  .header_mainBloc:after {
+    border-radius: 8px;
+  }
+}
 .header_mainBloc_man {
   position: absolute;
   top: -127px;
   left: -89px;
 }
-.header_mainBloc_textPadding {
-  margin: 25px 0 0 10px;
-  padding: 0;
-  margin-left: 34px;
+@media screen and (max-width: 767px) {
+  .header_mainBloc_man_mobile {
+    display: none;
+  }
 }
 .header_mainBloc_ItalicHeading {
   font-family: Bringin;
@@ -144,9 +172,14 @@
   word-spacing: -6px;
   letter-spacing: 4px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 575px) and (max-width: 767px) {
   .header_mainBloc_ItalicHeading {
-    font-size: 20px;
+    font-size: calc(25px + 15 * ((100vw - 200px) / 767));
+  }
+}
+@media screen and (max-width: 575px) {
+  .header_mainBloc_ItalicHeading {
+    font-size: calc(5px + 45 * ((100vw - 200px) / 575));
   }
 }
 .header_mainBloc_BoldHeading {
@@ -156,9 +189,14 @@
   word-spacing: -6px;
   letter-spacing: 8px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 575px) and (max-width: 767px) {
   .header_mainBloc_BoldHeading {
-    font-size: 18px;
+    font-size: calc(25px + 15 * ((100vw - 200px) / 767));
+  }
+}
+@media screen and (max-width: 575px) {
+  .header_mainBloc_BoldHeading {
+    font-size: calc(5px + 45 * ((100vw - 200px) / 575));
   }
 }
 .header_mainBloc_p {
@@ -167,6 +205,12 @@
   font-family: Opensans;
   padding-top: 20px;
   padding-bottom: 8px;
+}
+@media screen and (max-width: 767px) {
+  .header_mainBloc_p {
+    text-align: justify;
+    font-size: calc(5px + 25 * ((100vw - 200px) / 575));
+  }
 }
 .header_mainBloc_bottom {
   border: solid #36aeea 2px;
@@ -180,6 +224,11 @@
   letter-spacing: 2px;
   z-index: 1;
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .header_mainBloc_bottom {
+    width: 100%;
+  }
 }
 .header_mainBloc_bottom:hover {
   background-color: #36aeea;
