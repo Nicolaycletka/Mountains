@@ -54,7 +54,7 @@
     font-size: 70px;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 482px) {
   .header_logo_moun {
     font-size: 30px;
   }
@@ -69,7 +69,7 @@
     font-size: 70px;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 482px) {
   .header_logo_tains {
     font-size: 30px;
   }
