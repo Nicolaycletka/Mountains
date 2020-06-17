@@ -4,7 +4,7 @@
   background-repeat: repeat-x, repeat-x;
   background-position: 5px 2px, 5px 2px, 5px 0, 5px 0;
   background-size: 10px 10px, 10px 10px;
-  height: 10px;
+  height: 14px;
   width: 80px;
 }
 
@@ -13,7 +13,7 @@
   background-repeat: repeat-x, repeat-x;
   background-position: 5px 2px, 5px 2px, 5px 0, 5px 0;
   background-size: 10px 10px, 10px 10px;
-  height: 10px;
+  height: 14px;
   width: 80px;
 }
 
@@ -261,6 +261,11 @@
   padding-left: 0;
   z-index: 2;
 }
+@media screen and (max-width: 767px) {
+  .aboutUs_images_main {
+    display: none;
+  }
+}
 .aboutUs_images_empty {
   padding-right: 0;
 }
@@ -268,6 +273,11 @@
   position: absolute;
   z-index: 1;
   top: -57px;
+}
+@media screen and (max-width: 767px) {
+  .aboutUs_images_img {
+    display: none;
+  }
 }
 .aboutUs_textblock {
   height: 667px;
@@ -853,6 +863,23 @@
 }
 .footer_footer_logo {
   width: 139px;
+}
+
+@media screen and (max-width: 767px) {
+  .mobole_off {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 575px) and (max-width: 767px) {
+  .mobile_text_fluid {
+    font-size: calc(25px + 15 * ((100vw - 200px) / 767));
+  }
+}
+@media screen and (max-width: 575px) {
+  .mobile_text_fluid {
+    font-size: calc(5px + 45 * ((100vw - 200px) / 575));
+  }
 }
 
 @font-face {

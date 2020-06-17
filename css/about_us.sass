@@ -6,6 +6,7 @@
     height: 667px
     padding: 0
     z-index: 0
+
     &_waves
       padding-right: 0
     &_earth
@@ -20,12 +21,16 @@
       padding-bottom: 39px
       padding-left: 0
       z-index: 2
+      @media screen and (max-width: $pointTomobile)
+        display: none
     &_empty
       padding-right: 0
     &_img
       position: absolute
       z-index: 1
       top: -57px
+      @media screen and (max-width: $pointTomobile)
+       display: none
   //left: 937px
   &_textblock
     height: 667px
@@ -34,6 +39,8 @@
       padding-left: 15px
     h1
       font-family: OpenSansbold
+      //@media screen and (max-width: $pointTomobile)
+      //  @include fluid_text(4px, 45, $pointTomobile)
 
       font-size: 20px
       padding-top: 31.5px

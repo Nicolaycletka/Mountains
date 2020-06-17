@@ -1,0 +1,11 @@
+.mobole_off
+  @media screen and (max-width: $pointTomobile)
+    display: none
+.mobile_text_fluid
+ @media screen and (min-width: $pointToSmilemobile) and (max-width: $pointTomobile)
+  font-size: calc(25px + 15 * ((100vw - 200px) / 767))
+ @media screen and (max-width: $pointToSmilemobile)
+  font-size: calc(5px + 45 * ((100vw - 200px) / 575))
+
+@mixin fluid_text($min_size, $step, $media_point_max)
+ font-size: calc($min_size + $step * ((100vw - 200px) / $media_point_max))
