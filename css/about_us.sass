@@ -1,3 +1,4 @@
+
 .aboutUs
   height: 667px
   background-color: $aboutUs_bg_color
@@ -39,11 +40,12 @@
       padding-left: 15px
     h1
       font-family: OpenSansbold
-      @media screen and (max-width: $pointTomobile)
-        @include fluid_text (4px, 45, 457)
-
       font-size: 20px
       padding-top: 31.5px
+      @media screen and (min-width: $pointToSmilemobile) and (max-width: $pointTomobile)
+       font-size: calc(25px + 15 * ((100vw - 200px) / 767))
+      @media screen and (max-width: $pointToSmilemobile)
+       font-size: calc(5px + 45 * ((100vw - 200px) / 575))
     p
       color: $aboutUs_grey
       font-family: OpenSans
@@ -51,6 +53,9 @@
       padding-top: 10px
       line-height: 26px
       padding-bottom: 8.5px
+      @media screen and (max-width: $pointTomobile)
+        font-size: calc(5px + 25 * ((100vw - 200px) / 575))
+        text-align: justify
     button
       border: solid $Headerblue 2px
       background-color: $Headerblue
@@ -61,8 +66,17 @@
       font-family: OpenSans
       font-weight: bold
       letter-spacing: 2px
+      @media screen and (max-width: $pointTomobile)
+        width: 100%
+        height: 62px
       &:hover
         background-color: $Headerblue
         color: white
         border: solid $Headerblue 2px
+    &_mobile
+      @media screen and (max-width: $pointTomobile)
+        height: 70%
+        border: solid 3px $Headerblue
+        border-radius: 12px
+        padding: 6%
 

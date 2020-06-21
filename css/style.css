@@ -291,6 +291,16 @@
   font-size: 20px;
   padding-top: 31.5px;
 }
+@media screen and (min-width: 575px) and (max-width: 767px) {
+  .aboutUs_textblock h1 {
+    font-size: calc(25px + 15 * ((100vw - 200px) / 767));
+  }
+}
+@media screen and (max-width: 575px) {
+  .aboutUs_textblock h1 {
+    font-size: calc(5px + 45 * ((100vw - 200px) / 575));
+  }
+}
 .aboutUs_textblock p {
   color: #9b9a9a;
   font-family: OpenSans;
@@ -298,6 +308,12 @@
   padding-top: 10px;
   line-height: 26px;
   padding-bottom: 8.5px;
+}
+@media screen and (max-width: 767px) {
+  .aboutUs_textblock p {
+    font-size: calc(5px + 25 * ((100vw - 200px) / 575));
+    text-align: justify;
+  }
 }
 .aboutUs_textblock button {
   border: solid #36aeea 2px;
@@ -310,26 +326,55 @@
   font-weight: bold;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 767px) {
+  .aboutUs_textblock button {
+    width: 100%;
+    height: 62px;
+  }
+}
 .aboutUs_textblock button:hover {
   background-color: #36aeea;
   color: white;
   border: solid #36aeea 2px;
 }
+@media screen and (max-width: 767px) {
+  .aboutUs_textblock_mobile {
+    height: 70%;
+    border: solid 3px #36aeea;
+    border-radius: 12px;
+    padding: 6%;
+  }
+}
 
 .journal {
-  height: 978px;
+  height: 1060px;
   background-color: white;
+}
+@media screen and (max-width: 767px) {
+  .journal {
+    height: 2850px;
+  }
 }
 .journal_shadow {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 767px) {
+  .journal_shadow {
+    border-radius: 10px;
+  }
+}
 .journal_shadow .row {
-  height: 380px;
+  height: auto;
 }
 .journal_1_mainText {
   margin-bottom: 42px;
   margin-left: 41px;
   margin-right: 39px;
+}
+@media screen and (max-width: 767px) {
+  .journal_1_mainText {
+    margin-top: 20px;
+  }
 }
 .journal_heading {
   font-family: Opensansbold;
@@ -337,12 +382,29 @@
   padding-top: 26px;
   margin-bottom: 70px;
 }
+@media screen and (min-width: 575px) and (max-width: 767px) {
+  .journal_heading {
+    font-size: calc(25px + 15 * ((100vw - 200px) / 767));
+  }
+}
+@media screen and (max-width: 575px) {
+  .journal_heading {
+    font-size: calc(5px + 45 * ((100vw - 200px) / 575));
+  }
+}
 .journal_heading_container {
   padding-top: 64px;
 }
 .journal_1_img {
   background-image: url("../images/Journal/journal1.png");
   height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 767px) {
+  .journal_1_img {
+    margin-top: 75px;
+  }
 }
 .journal_1_img_1 {
   width: 100%;
@@ -350,14 +412,25 @@
 .journal_2_img {
   background-image: url("../images/Journal/journal2.png");
   height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .journal_3_img {
   background-image: url("../images/Journal/journal3.png");
   height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .journal_text {
-  height: 380px;
   margin-top: 47px;
+}
+@media screen and (max-width: 767px) {
+  .journal_text {
+    margin-bottom: 10px;
+    max-width: 380px !important;
+    justify-content: space-evenly;
+    height: 380px;
+  }
 }
 .journal_text h1 {
   font-family: Opensansbold;
@@ -365,6 +438,16 @@
   color: #16b5ef;
   letter-spacing: 2px;
   margin-bottom: 55px;
+}
+@media screen and (min-width: 575px) and (max-width: 767px) {
+  .journal_text h1 {
+    font-size: calc(25px + 15 * ((100vw - 200px) / 767));
+  }
+}
+@media screen and (max-width: 575px) {
+  .journal_text h1 {
+    font-size: calc(5px + 45 * ((100vw - 200px) / 575));
+  }
 }
 .journal_text h2 {
   font-family: Opensansbold;
@@ -377,17 +460,39 @@
   line-height: 23.5px;
   margin-bottom: 29px;
 }
+@media screen and (min-width: 575px) and (max-width: 767px) {
+  .journal_text h2 {
+    font-size: calc(16px + 10 * ((100vw - 200px) / 767));
+  }
+}
+@media screen and (max-width: 575px) {
+  .journal_text h2 {
+    font-size: calc(5px + 30 * ((100vw - 200px) / 575));
+    line-height: normal;
+  }
+}
 .journal_text p {
   font-family: OpenSans;
   font-size: 14px;
   color: #9b9a9a;
   word-spacing: -1px;
 }
+@media screen and (max-width: 767px) {
+  .journal_text p {
+    font-size: calc(10px + 10 * ((100vw - 200px) / 575));
+    margin: 0 0 0 0;
+  }
+}
 .journal_text_list {
   font-family: "Times New Roman" !important;
   font-size: 14px !important;
   color: #000 !important;
   font-style: italic !important;
+}
+@media screen and (max-width: 767px) {
+  .journal_text_list {
+    font-size: calc(10px + 10 * ((100vw - 200px) / 575)) !important;
+  }
 }
 .journal_text_arrow_1:before {
   content: "";
@@ -398,6 +503,11 @@
   border-right-color: #fff;
   border-width: 9px;
   margin-top: -9px;
+}
+@media screen and (max-width: 767px) {
+  .journal_text_arrow_1:before {
+    display: none;
+  }
 }
 .journal_text_arrow_2:before {
   content: "";
@@ -410,16 +520,26 @@
   margin-top: -9px;
   z-index: 1;
 }
+@media screen and (max-width: 767px) {
+  .journal_text_arrow_2:before {
+    display: none;
+  }
+}
 .journal_text_arrow_3:before {
   content: "";
   border: solid transparent;
   position: absolute;
   bottom: 112.5%;
-  right: 55px;
+  right: 305px;
+  top: 361px;
   border-bottom-color: #fff;
   border-width: 9px;
-  margin-top: -9px;
   z-index: 122;
+}
+@media screen and (max-width: 767px) {
+  .journal_text_arrow_3:before {
+    display: none;
+  }
 }
 .journal S {
   font-weight: bolder;

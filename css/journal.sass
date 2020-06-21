@@ -1,43 +1,74 @@
+
+
 .journal
-  height: 978px
+  height: 1060px
   background-color: white
+  @media screen and (max-width: $pointTomobile)
+    height: 2850px
 
   &_shadow
     box-shadow: 0 0 30px rgba(0,0,0,0.1)
+    @media screen and (max-width: $pointTomobile)
+      border-radius: 10px
+
     .row
-      height: 380px
+      height: auto
+
   &_1_mainText
     margin-bottom: 42px
     margin-left: 41px
     margin-right: 39px
+    @media screen and (max-width: $pointTomobile)
+      margin-top: 20px
   &_heading
     font-family: Opensansbold
     font-size: 30px
     padding-top: 26px
     margin-bottom: 70px
+    @media screen and (min-width: $pointToSmilemobile) and (max-width: $pointTomobile)
+      font-size: calc(25px + 15 * ((100vw - 200px) / 767))
+    @media screen and (max-width: $pointToSmilemobile)
+     font-size: calc(5px + 45 * ((100vw - 200px) / 575))
     &_container
       padding-top: 64px
   &_1_img
     background-image: url("../images/Journal/journal1.png")
     height: 380px
+    background-repeat: no-repeat
+    background-position: center
+    @media screen and (max-width: $pointTomobile)
+     margin-top: 75px
     &_1
       width: 100%
   &_2_img
     background-image: url("../images/Journal/journal2.png")
     height: 380px
+    background-repeat: no-repeat
+    background-position: center
   &_3_img
     background-image: url("../images/Journal/journal3.png")
     height: 380px
+    background-repeat: no-repeat
+    background-position: center
 
   &_text
-    height: 380px
+
     margin-top: 47px
+    @media screen and (max-width: $pointTomobile)
+      margin-bottom: 10px
+      max-width: 380px!important
+      justify-content: space-evenly
+      height: 380px
     h1
       font-family: Opensansbold
       font-size: 11px
       color: $journalHblue
       letter-spacing: 2px
       margin-bottom: 55px
+      @media screen and (min-width: $pointToSmilemobile) and (max-width: $pointTomobile)
+       font-size: calc(25px + 15 * ((100vw - 200px) / 767))
+      @media screen and (max-width: $pointToSmilemobile)
+       font-size: calc(5px + 45 * ((100vw - 200px) / 575))
     //margin-top:
     h2
       font-family: Opensansbold
@@ -49,16 +80,26 @@
       padding-right: 5px
       line-height: 23.5px
       margin-bottom: 29px
+      @media screen and (min-width: $pointToSmilemobile) and (max-width: $pointTomobile)
+       font-size: calc(16px + 10 * ((100vw - 200px) / 767))
+      @media screen and (max-width: $pointToSmilemobile)
+       font-size: calc(5px + 30 * ((100vw - 200px) / 575))
+       line-height: normal
     p
       font-family: OpenSans
       font-size: 14px
       color: $aboutUs_grey
       word-spacing: -1px
+      @media screen and (max-width: $pointTomobile)
+        font-size: calc(10px + 10 * ((100vw - 200px) / 575))
+        margin: 0 0 0 0
     &_list
       font-family: "Times New Roman" !important
       font-size: 14px !important
       color: #000 !important
       font-style: italic !important
+      @media screen and (max-width: $pointTomobile)
+        font-size: calc(10px + 10 * ((100vw - 200px) / 575))!important
     &_arrow_1
       &:before
         content: ""
@@ -69,6 +110,8 @@
         border-right-color: #fff
         border-width: 9px
         margin-top: -9px
+        @media screen and (max-width: $pointTomobile)
+          display: none
     &_arrow_2
       &:before
         content: ""
@@ -80,16 +123,21 @@
         border-width: 9px
         margin-top: -9px
         z-index: 1
+        @media screen and (max-width: $pointTomobile)
+          display: none
     &_arrow_3
       &:before
         content: ""
         border: solid transparent
         position: absolute
         bottom: 112.5%
-        right: 55px
+        right: 305px
+        top: 361px
         border-bottom-color: #fff
         border-width: 9px
-        margin-top: -9px
+        //margin-top: -9px
         z-index: 122
+        @media screen and (max-width: $pointTomobile)
+          display: none
   S
     font-weight: bolder
