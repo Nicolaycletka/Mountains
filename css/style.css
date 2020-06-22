@@ -203,13 +203,14 @@
   color: #bac6cb;
   font-size: 1.2em;
   font-family: Opensans;
-  padding-top: 20px;
-  padding-bottom: 8px;
+  padding: 20px 0 8px 0;
 }
 @media screen and (max-width: 767px) {
   .header_mainBloc_p {
     text-align: justify;
     font-size: calc(5px + 25 * ((100vw - 200px) / 575));
+    padding: 0;
+    padding-top: 20px;
   }
 }
 .header_mainBloc_bottom {
@@ -256,6 +257,11 @@
 .aboutUs_images_earth_container {
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .aboutUs_images_earth_container {
+    display: none;
+  }
+}
 .aboutUs_images_main {
   padding-bottom: 39px;
   padding-left: 0;
@@ -268,6 +274,11 @@
 }
 .aboutUs_images_empty {
   padding-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .aboutUs_images_empty {
+    display: none;
+  }
 }
 .aboutUs_images_img {
   position: absolute;
@@ -285,6 +296,11 @@
 .aboutUs_textblock_margin {
   margin-top: -37px;
   padding-left: 15px;
+}
+@media screen and (max-width: 767px) {
+  .aboutUs_textblock_margin {
+    padding: 0;
+  }
 }
 .aboutUs_textblock h1 {
   font-family: OpenSansbold;
@@ -343,6 +359,8 @@
     border: solid 3px #36aeea;
     border-radius: 12px;
     padding: 6%;
+    background-image: url("../images/Earth.png");
+    background-size: 100%;
   }
 }
 
@@ -553,11 +571,26 @@
   padding: 0;
   z-index: 0;
 }
+@media screen and (max-width: 767px) {
+  .form {
+    z-index: 2;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form_mobile {
+    height: 500px;
+  }
+}
 .form_tree {
   position: absolute;
   bottom: 0;
   left: 1236px;
   z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .form_tree {
+    display: none;
+  }
 }
 .form_tree_blure {
   position: absolute;
@@ -565,10 +598,23 @@
   left: 1380px;
   z-index: 2;
 }
+@media screen and (max-width: 767px) {
+  .form_tree_blure {
+    display: none;
+  }
+}
 .form_heading {
   margin-bottom: 40px;
   margin-top: 145px;
   width: 80px;
+}
+@media screen and (max-width: 767px) {
+  .form_heading {
+    margin-top: 62px;
+  }
+}
+.form_heading_container {
+  padding: 0;
 }
 .form_heading_font {
   font-family: Opensansbold;
@@ -581,9 +627,22 @@
   font-size: 16px;
   color: #9b9a9a;
   line-height: 9px;
+  padding-left: 0;
+}
+@media screen and (max-width: 767px) {
+  .form p {
+    line-height: normal;
+    padding: 0;
+    text-align: center;
+  }
 }
 .form form {
   padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .form form {
+    width: 100%;
+  }
 }
 .form_imput_container {
   padding-left: -1px !important;
@@ -591,9 +650,22 @@
   background-color: white;
   height: 62px;
 }
+@media screen and (max-width: 767px) {
+  .form_imput_container {
+    padding: 0;
+    height: auto;
+    background-color: transparent;
+  }
+}
 .form_imput_container .phone {
   border-left: 1px solid #ebebeb;
   padding-left: 21px;
+}
+@media screen and (max-width: 767px) {
+  .form_imput_container .phone {
+    border: none;
+    padding: 5px;
+  }
 }
 .form_text {
   margin-bottom: 33px;
@@ -605,6 +677,14 @@
   padding-bottom: 0;
   height: 34px;
   color: #9b9a9a;
+}
+@media screen and (max-width: 767px) {
+  .form_imput {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 54px;
+  }
 }
 .form_imput::-webkit-input-placeholder {
   color: #848484;
@@ -621,6 +701,12 @@
   width: 224px;
   background-color: #36aeea;
   border-color: #36aeea;
+}
+@media screen and (max-width: 767px) {
+  .form_imput_button {
+    width: 100%;
+    padding: 0;
+  }
 }
 .form_imput_button:hover {
   background-color: #36aeea;

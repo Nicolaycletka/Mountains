@@ -5,22 +5,34 @@
   width: 100%
   padding: 0
   z-index: 0
+  @media screen and (max-width: $pointTomobile)
+    z-index: 2
+  &_mobile
+    @media screen and (max-width: $pointTomobile)
+      height: 500px
 
   &_tree
     position: absolute
     bottom: 0
     left: 1236px
     z-index: 1
+    @media screen and (max-width: $pointTomobile)
+      display: none
     &_blure
       position: absolute
       bottom: 0
       left: 1380px
       z-index: 2
+      @media screen and (max-width: $pointTomobile)
+        display: none
   &_heading
     margin-bottom: 40px
     margin-top: 145px
     width: 80px
-
+    @media screen and (max-width: $pointTomobile)
+      margin-top: 62px
+    &_container
+      padding: 0
     &_font
       font-family: Opensansbold
       text-transform: uppercase
@@ -31,16 +43,33 @@
     font-size: 16px
     color: $aboutUs_grey
     line-height: 9px
+    padding-left: 0
+    @media screen and (max-width: $pointTomobile)
+      line-height: normal
+      padding: 0
+      text-align: center
   form
     padding: 0
+    @media screen and (max-width: $pointTomobile)
+      width: 100%
+
   &_imput_container
     padding-left: -1px !important
     padding-right: 0 !important
     background-color: white
     height: 62px
+    @media screen and (max-width: $pointTomobile)
+      padding: 0
+      height: auto
+      background-color: transparent
+
+
     .phone
       border-left: 1px solid #ebebeb
       padding-left: 21px
+      @media screen and (max-width: $pointTomobile)
+        border: none
+        padding: 5px
   &_text
     margin-bottom: 33px
 
@@ -52,8 +81,17 @@
     padding-bottom: 0
     height: 34px
     color: $aboutUs_grey
+    @media screen and (max-width: $pointTomobile)
+      padding-left: 10px
+      margin-bottom: 10px
+      border-radius: 5px
+      height: 54px
+
     &::-webkit-input-placeholder
       color: $inputGrey
+
+
+
     &:focus
       box-shadow: none
       outline: none
@@ -62,6 +100,10 @@
     &_button
       height: 54px
       width: 224px
+      @media screen and (max-width: $pointTomobile)
+        width: 100%
+        padding: 0
+
 
       background-color:  $Headerblue
       border-color: $Headerblue

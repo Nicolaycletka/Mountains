@@ -17,6 +17,8 @@
       //left: 488px
       &_container
         position: relative
+        @media screen and (max-width: $pointTomobile)
+         display: none
 
     &_main
       padding-bottom: 39px
@@ -26,6 +28,8 @@
         display: none
     &_empty
       padding-right: 0
+      @media screen and (max-width: $pointTomobile)
+        display: none
     &_img
       position: absolute
       z-index: 1
@@ -38,6 +42,8 @@
     &_margin
       margin-top: -37px
       padding-left: 15px
+      @media screen and (max-width: $pointTomobile)
+        padding: 0
     h1
       font-family: OpenSansbold
       font-size: 20px
@@ -79,4 +85,6 @@
         border: solid 3px $Headerblue
         border-radius: 12px
         padding: 6%
+        background-image: url("../images/Earth.png")
+        background-size: 100%
 
