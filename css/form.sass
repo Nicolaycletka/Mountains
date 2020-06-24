@@ -38,6 +38,10 @@
       text-transform: uppercase
       font-size: 20px
       margin-bottom: 24px
+      @media screen and (min-width: $pointToSmilemobile) and (max-width: $pointTomobile)
+        font-size: calc(25px + 15 * ((100vw - 200px) / 767))
+      @media screen and (max-width: $pointToSmilemobile)
+        font-size: calc(5px + 45 * ((100vw - 200px) / 575))
   p
     font-family: OpenSans
     font-size: 16px
@@ -48,6 +52,7 @@
       line-height: normal
       padding: 0
       text-align: center
+      font-size: calc(10px + 10 * ((100vw - 200px) / 575))
   form
     padding: 0
     @media screen and (max-width: $pointTomobile)
